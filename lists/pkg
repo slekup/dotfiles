@@ -27,6 +27,7 @@ ttf-liberation # Browser font support
 ttf-liberation-mono-nerd # Browser font support
 
 # Dependencies
+base-devel # Build tools for compiling and linking
 xdg-desktop-portal-hyprland # XDG desktop portal backend for hyprland
 polkit-gnome # Control system-wide priviledges
 python-requests # Python HTTP for humans
@@ -48,7 +49,7 @@ rustup # Rust language
 go # Go language
 
 # Tools
-paru # AUR package manager
+paru-bin # AUR package manager
 stow # Symlink home dir
 wl-clipboard # Clipboard to system in nvim
 vifm # File manager
@@ -57,9 +58,8 @@ tmux # Terminal session manager
 swappy # Screenshotting tool
 grim # Grab images from wayland compositor
 slurp # Select region in wayland compositor
-exa # Better ls
+eza # Better ls
 bat # Better cat
-cmus # Music player
 man-db # Man utility
 btop # Task manager
 ffmpeg # Audio and video manager
@@ -73,11 +73,15 @@ gpick # Color picker
 neofetch # System information
 mlocate # locate CLI
 imagemagick # Convert images
+timeshift # System backups
+trash-cli # Trash files instead of perm delete
 
 # Apps
 firefox-developer-edition # Main browser
+chromium # Secondary browser
 tor # Privacy browser
 obsidian # Advanced Note taking
+cmus # Music player
 leafpad # Basic note taking
 obs-studio # Screen recording
 gpick # Color picker

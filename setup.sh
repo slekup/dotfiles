@@ -14,7 +14,7 @@ export FAIL="${RED}FAIL${RESET} "
 
 # Sync package databasde
 echo -e "\n${INFO}Updating package database..."
-# sudo pacman -Syu || echo -e "${FAIL}Failed to update package database"
+sudo pacman -Syu || echo -e "${FAIL}Failed to update package database"
 echo -e "${DONE}Package database updated successfully"
 
 # Install packages with pacman
@@ -28,10 +28,14 @@ while IFS= read -r line; do
       
       # Install the package
       echo "Installing $package - $comment"
-      # sudo pacman -S --no-confirm --needed "$package" || echo -e "${FAIL}Failed to install repo packages"
+      sudo pacman -S --no-confirm --needed "$package" || echo -e "${FAIL}Failed to install repo packages"
   fi
 done < ./lists/pkg
 echo -e "${DONE}Installed repo packages successfully"
+
+echo -e "${INFO}Registering fonts..."
+fc-cache -f -v || echo -e "${FAIL}Failed to register fonts"
+echo -e "${DONE}Registered fonts successfully"
 
 # Install packages from the AUR
 echo -e "\n${INFO}Installing AUR packages..."
@@ -44,14 +48,7 @@ while IFS= read -r line; do
       
       # Install the package
       echo "Installing $package - $comment"
-      # paru -S --no-confirm -needed $package || echo -e "${FAIL}Failed to install AUR packages"
-  fi
-done < ./lists/pkg
-exit 0
-
-while IFS= read -r aur_pkg; do
-  if [[ $aur_pkg == \#* ]]; then
-    continue # Skips lines starting with #
+      paru -S --no-confirm -needed $package || echo -e "${FAIL}Failed to install AUR packages"
   fi
 done < ./lists/pkg_aur
 echo -e "${DONE}Install AUR packages successfully"
