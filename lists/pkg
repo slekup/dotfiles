@@ -54,6 +54,7 @@ stow # Symlink home dir
 wl-clipboard # Clipboard to system in nvim
 vifm # File manager
 zsh # Primary shell
+zsh-theme-powerlevel10k # Prompt theme
 tmux # Terminal session manager
 swappy # Screenshotting tool
 grim # Grab images from wayland compositor
