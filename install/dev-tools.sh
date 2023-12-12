@@ -1,6 +1,6 @@
 #!/bin/bash
 
 sudo pacman -S \
-  github-cli \
-  rustup \
-  go \
+  github-cli \ # Interacting with the GitHub API
+  rustup \ # Rust language
+  go \ # Go language

@@ -1,9 +1,10 @@
 #!/bin/bash
 
 sudo pacman -S \
-  firefox-developer-edition \
-  tor \
-  obsidian \
-  leafpad \
-  obs-studio \
-  gpick \
+  firefox-developer-edition \ # Main browser
+  tor \ # Privacy browser
+  obsidian \ # Advanced Note taking
+  leafpad \ # Basic note taking
+  obs-studio \ # Screen recording
+  gpick \ # Color picker
+  vlc # Video player
