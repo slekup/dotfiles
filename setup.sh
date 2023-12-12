@@ -93,6 +93,7 @@ function setup_zsh() {
   mkdir -p ~/.zsh
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+  git clone https://github.com/zsh-users/zsh-history-substring-search ~/.zsh/zsh-history-substring-search
 }
 setup_zsh || { echo -e "${FAIL}Failed to setup zsh"; exit 1; }
 echo -e "${DONE}Setup ZSH successfully"
