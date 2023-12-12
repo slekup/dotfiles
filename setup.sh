@@ -105,5 +105,14 @@ echo -e "${DONE}Set shell to ZSH successfully"
 
 # Symlink configurations
 echo -e "${INFO}Symlinking configurations with stow..."
-stow . || { echo -e "${FAIL}Failed to symlink configurations";exit 1; }
+function links() {
+  sudo ln -s ~/dotfiles/sddm.conf /etc/sddm.conf
+  stow . 
+}
+links || { echo -e "${FAIL}Failed to symlink configurations";exit 1; }
 echo -e "${DONE}Symlinked configurations successfully"
+
+# Enable sddm login manager
+echo -e "${INFO}Enabling sddm..."
+sudo systemctl enable sddm || { echo -e "${FAIL}Failed to enable sddm"; exit 1; }
+echo -e "${DONE}Enabled sddm successfully"

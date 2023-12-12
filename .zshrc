@@ -37,13 +37,6 @@ export KEYTIMEOUT=1
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-# Use vim keys in tab complete menu
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'l' vi-foward-char
-bindkey -M menuselect 'j' vi-down-line-or-history
-bindkey -v '^?' backward-delete-char
-
 # Use vifm to switch directories - CTRL + o
 open_vifm () {
   tmp="$(mktemp)"
@@ -57,16 +50,19 @@ open_vifm () {
 bindkey -s '^o' 'open_vifm\n'
 
 # Aliases
-alias ls=eza
-alias cat=bat
+alias ls="eza"
+alias cat="bat"
 alias up="sudo pacman -Syu"
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+alias gs="git status"
 
 # Plugins and themes
-source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# History substring search keybindings
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[A' history-substring-search-down
+# Use vim keys in tab complete menu
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-foward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -v '^?' backward-delete-char

@@ -15,6 +15,7 @@ lxappearance # Theme switcher
 xfce4-settings # XFCE4 Settings
 arc-gtk-theme # Dracula theme
 arc-icon-theme # Dracula icons theme
+sddm # Login screen manager
 
 # Fonts
 noto-fonts # Font support
