@@ -13,8 +13,8 @@ brightnessctl # Control screen brightness
 gvfs # Virtual file system for git
 lxappearance # Theme switcher
 xfce4-settings # XFCE4 Settings
-dracula-gtk-theme # Dracula theme
-dracula-icons-git # Dracula icons theme
+arc-gtk-theme # Dracula theme
+arc-icon-theme # Dracula icons theme
 
 # Fonts
 noto-fonts # Font support
@@ -49,7 +49,6 @@ rustup # Rust language
 go # Go language
 
 # Tools
-paru-bin # AUR package manager
 stow # Symlink home dir
 wl-clipboard # Clipboard to system in nvim
 vifm # File manager
