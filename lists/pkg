@@ -47,6 +47,7 @@ neovim # Primary code editor
 github-cli # Interacting with the GitHub API
 rustup # Rust language
 go # Go language
+nodejs # Node.js runtime
 
 # Tools
 stow # Symlink home dir
