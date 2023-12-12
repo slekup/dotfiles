@@ -1,0 +1,84 @@
+# System
+wayland # Display server
+wayland-protocols # Display server protocol
+wlroots # Wayland compositor
+hyprland # Window manager
+kitty # Terminal emulator
+waybar # Toolbar
+swaybg # Wallpaper manager
+wofi # App launcher
+mako # Notification daemon
+thunar # Graphical file manager
+brightnessctl # Control screen brightness
+gvfs # Virtual file system for git
+lxappearance # Theme switcher
+xfce4-settings # XFCE4 Settings
+dracula-gtk-theme # Dracula theme
+dracula-icons-git # Dracula icons theme
+
+# Fonts
+noto-fonts # Font support
+noto-fonts-cjk # Font support
+noto-fonts-emoji # Font support
+noto-fonts-extra # Font support
+ttf-jetbrains-mono # Font support
+ttf-jetbrains-mono-nerd # Font support
+ttf-liberation # Browser font support
+ttf-liberation-mono-nerd # Browser font support
+
+# Dependencies
+xdg-desktop-portal-hyprland # XDG desktop portal backend for hyprland
+polkit-gnome # Control system-wide priviledges
+python-requests # Python HTTP for humans
+
+# Audio
+pamixer # pulseaudio commandline mixer
+pipewire # Audio manager
+pipewire-alsa # Alsa configuration
+pipewire-jack # Jack support
+pipewire-pulse # Pulseaudio replacement
+bluez # Bi-directional audio support
+bluez-utils # Dev and debug utils for bluez
+
+# Development Tools
+git # Git CLI
+neovim # Primary code editor
+github-cli # Interacting with the GitHub API
+rustup # Rust language
+go # Go language
+
+# Tools
+paru # AUR package manager
+stow # Symlink home dir
+wl-clipboard # Clipboard to system in nvim
+vifm # File manager
+zsh # Primary shell
+tmux # Terminal session manager
+swappy # Screenshotting tool
+grim # Grab images from wayland compositor
+slurp # Select region in wayland compositor
+exa # Better ls
+bat # Better cat
+cmus # Music player
+man-db # Man utility
+btop # Task manager
+ffmpeg # Audio and video manager
+gdu # Disk usage analyzer
+lolcat # Rainbow text
+figlet # Large ASCII text
+cmatrix # Fun
+yt-dlp # YouTube downloader
+termdown # Timer and stopwatch
+gpick # Color picker
+neofetch # System information
+mlocate # locate CLI
+imagemagick # Convert images
+
+# Apps
+firefox-developer-edition # Main browser
+tor # Privacy browser
+obsidian # Advanced Note taking
+leafpad # Basic note taking
+obs-studio # Screen recording
+gpick # Color picker
+vlc # Video player
