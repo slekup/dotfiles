@@ -16,6 +16,8 @@ xfce4-settings # XFCE4 Settings
 arc-gtk-theme # Dracula theme
 arc-icon-theme # Dracula icons theme
 sddm # Login screen manager
+swaylock # Lock screen
+swayidle # Idle daemon
 
 # Fonts
 noto-fonts # Font support
