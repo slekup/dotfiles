@@ -98,6 +98,15 @@ function setup_zsh() {
 setup_zsh || { echo -e "${FAIL}Failed to setup zsh"; exit 1; }
 echo -e "${DONE}Setup ZSH successfully"
 
+# Setup vifm
+echo -e "${INFO}Setting up vifm..."
+function setup_vifm() {
+  mkdir -p ~/.config/vifm
+  git clone https://github.com/thimc/vifm_devicons ~/.config/vifm/vifm_devicons
+}
+setup_vifm || { echo -e "${FAIL}Failed to setup vifm"; exit 1; }
+echo -e "${DONE}Setup vifm successfully"
+
 # Change shell for root
 echo -e "${INFO}Setting shell to ZSH..."
 sudo chsh -s $(which zsh) || { echo -e "${FAIL}Failed to set shell to ZSH"; exit 1; }
