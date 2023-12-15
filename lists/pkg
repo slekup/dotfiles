@@ -54,6 +54,7 @@ nodejs # Node.js runtime
 
 # Tools
 stow # Symlink home dir
+vnstat # Internet usage tracker
 wl-clipboard # Clipboard to system in nvim
 vifm # File manager
 zsh # Primary shell

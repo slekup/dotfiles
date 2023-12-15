@@ -121,6 +121,15 @@ function links() {
 links || { echo -e "${FAIL}Failed to symlink configurations";exit 1; }
 echo -e "${DONE}Symlinked configurations successfully"
 
+# Enabling services
+echo -e "${DONE} Enabling services..."
+function enable_services() {
+  sudo systemctl enable vnstat
+  sudo systemctl start vnstat
+}
+enable_services || { echo -e "${FAIL}Failed to enable services"; exit 1 }
+echo -e "${DONE}Enabled services successfully"
+
 # Enable sddm login manager
 echo -e "${INFO}Enabling sddm..."
 sudo systemctl enable sddm || { echo -e "${FAIL}Failed to enable sddm"; exit 1; }
