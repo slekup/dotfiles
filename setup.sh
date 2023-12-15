@@ -124,8 +124,9 @@ echo -e "${DONE}Symlinked configurations successfully"
 # Enabling services
 echo -e "${DONE} Enabling services..."
 function enable_services() {
-  sudo systemctl enable vnstat
-  sudo systemctl start vnstat
+  sudo systemctl enable vnstat && sudo systemctl start vnstat
+  sudo systemctl enable libvirtd && sudo systemctl start libvirtd
+  sudo usermod -a -G libvirt $USER
 }
 enable_services || { echo -e "${FAIL}Failed to enable services"; exit 1 }
 echo -e "${DONE}Enabled services successfully"
