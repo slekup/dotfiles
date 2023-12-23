@@ -9,6 +9,8 @@ swaybg # Wallpaper manager
 wofi # App launcher
 mako # Notification daemon
 thunar # Graphical file manager
+tumbler # Thumbnail previews
+thunar-volman # Removable device management
 brightnessctl # Control screen brightness
 gvfs # Virtual file system for git
 lxappearance # Theme switcher

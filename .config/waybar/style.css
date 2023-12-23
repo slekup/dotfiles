@@ -3,13 +3,13 @@
     border-radius: 0;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     min-height: 0;
 }
 
 window#waybar {
-    background: rgba(21, 18, 27, 0);
-    color: #cdd6f4;
+    background: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 tooltip {
