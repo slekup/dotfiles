@@ -13,7 +13,7 @@ window#waybar {
 }
 
 tooltip {
-    background: #1e1e2e;
+    background: #1e1f28;
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
@@ -22,17 +22,17 @@ tooltip {
 
 #workspaces button {
     padding: 5px;
-    color: #313244;
+    color: #898da3;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    color: #c1c6e6;
 }
 
-#workspaces button.focused {
-    color: #a6adc8;
-    background: #eba0ac;
+#workspaces button.visible {
+    color: #c1c6e6;
+    background: #343545;
     border-radius: 10px;
 }
 
@@ -49,31 +49,21 @@ tooltip {
 }
 
 #custom-power_profile,
-#custom-weather,
 #window,
 #clock,
 #battery,
 #pulseaudio,
 #network,
 #bluetooth,
-#temperature,
 #workspaces,
 #tray,
 #backlight {
-    background: #1e1e2e;
-    opacity: 0.8;
+    background: #1e1f28;
+    opacity: 1;
     padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 10px;
-    border: 1px solid #181825;
-}
-
-#temperature {
-    border-radius: 10px 0px 0px 10px;
-}
-
-#temperature.critical {
-    color: #eba0ac;
+    margin-top: 5px;
+    /* margin: 3px 0px; */
+    /* border: 1px solid #aaa; */
 }
 
 #backlight {
@@ -86,7 +76,7 @@ tooltip {
 }
 
 #workspaces {
-    background: #1e1e2e;
+    background: #1e1f28;
     border-radius: 10px;
     margin-left: 10px;
     padding-right: 0px;
@@ -106,33 +96,34 @@ tooltip {
 }
 
 #clock {
-    color: #fab387;
-    border-radius: 10px 0px 0px 10px;
+    color: #be4dff;
+    border-radius: 10px;
     margin-left: 10px;
     border-right: 0px;
 }
 
 #network {
-    color: #f9e2af;
+    color: #6f7285;
     border-radius: 10px 0px 0px 10px;
     border-left: 0px;
     border-right: 0px;
 }
 
 #bluetooth {
-    color: #89b4fa;
+    color: #576dff;
     border-radius: 0px 10px 10px 0px;
     margin-right: 10px
 } 
 
 #pulseaudio {
-    color: #89b4fa;
+    color: #00bd7b;
     border-left: 0px;
     border-right: 0px;
+    border-radius: 10px 0px 0px 10px; 
 }
 
 #pulseaudio.microphone {
-    color: #cba6f7;
+    color: #d400ff;
     border-left: 0px;
     border-right: 0px;
     border-radius: 0px 10px 10px 0px;
@@ -144,10 +135,4 @@ tooltip {
     border-radius: 0 10px 10px 0;
     margin-right: 10px;
     border-left: 0px;
-}
-
-#custom-weather {
-    border-radius: 0px 10px 10px 0px;
-    border-right: 0px;
-    margin-left: 0px;
 }
