@@ -53,7 +53,11 @@ bindkey -s '^o' 'open_vifm\n'
 alias ls="eza"
 alias cat="bat"
 alias up="sudo pacman -Syu"
+
 alias gs="git status"
+alias gc="git commit"
+alias gp="git push"
+alias gl="git log --graph --oneline --decorate"
 
 # Plugins and themes
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
