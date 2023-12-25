@@ -12,11 +12,11 @@ thunar # Graphical file manager
 tumbler # Thumbnail previews
 thunar-volman # Removable device management
 brightnessctl # Control screen brightness
-gvfs # Virtual file system for git
+gvfs # Virtual file system for git - automount usb for thunar
 lxappearance # Theme switcher
 xfce4-settings # XFCE4 Settings
-arc-gtk-theme # Dracula theme
-arc-icon-theme # Dracula icons theme
+arc-gtk-theme # Arc theme
+arc-icon-theme # Arc icons theme
 sddm # Login screen manager
 swaylock # Lock screen
 swayidle # Idle daemon
