@@ -42,7 +42,7 @@ echo -e "${DONE}Registered fonts successfully"
 
 echo -e "${INFO}Installing paru - AUR helper"
 function install_paru() {
-  git clone https://aur.archlinux.org/packages/paru-bin paru
+  git clone https://aur.archlinux.org/paru.git
   cd paru
   makepkg -sri --noconfirm --needed
   cd ..
