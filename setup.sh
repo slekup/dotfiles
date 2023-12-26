@@ -81,7 +81,10 @@ while IFS= read -r line; do
 
 		# Install the package
 		echo "Installing $package - $comment"
-		# paru -S --noconfirm -needed $package || { echo -e "${FAIL}Failed to install AUR packages"; exit 1; }
+		paru -S --noconfirm -needed $package || {
+			echo -e "${FAIL}Failed to install AUR packages"
+			exit 1
+		}
 	fi
 done <./lists/pkg_aur
 echo -e "${DONE}Install AUR packages successfully"
