@@ -97,10 +97,10 @@ function download_xdm() {
 	chmod +x install.sh && ./install.sh
 	cd ../ && sudo rm -rf xdm
 }
-download_xdm || {
-	echo -e "${FAIL}Failed to install Xtreme Download Mananger"
-	exit 1
-}
+# download_xdm || {
+# 	echo -e "${FAIL}Failed to install Xtreme Download Mananger"
+# 	exit 1
+# }
 echo -e "${DONE}Successfully installed Xtreme Download Manager"
 
 # Start the bluetooth service
@@ -170,6 +170,7 @@ echo -e "${DONE} Enabling services..."
 function enable_services() {
 	sudo systemctl enable vnstat && sudo systemctl start vnstat
 	sudo systemctl enable libvirtd && sudo systemctl start libvirtd
+	sudo systemctl enable portmaster && sudo systemctl start portmaster
 	sudo usermod -a -G libvirt $USER
 }
 enable_services || {
