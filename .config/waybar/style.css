@@ -46,6 +46,7 @@ tooltip {
     color: #cdd6f4;
 }
 
+#cpu,
 #custom-power_profile,
 #window,
 #clock,
@@ -61,6 +62,15 @@ tooltip {
     padding: 0px 10px;
     margin-top: 8px;
     /* border: 1px solid #aaa; */
+}
+
+#clock {
+  margin-right: 10px;
+}
+
+#cpu {
+  border-radius: 10px; 
+  color: #fcaa2f;
 }
 
 #workspaces {
