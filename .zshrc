@@ -59,6 +59,9 @@ alias gc="git commit"
 alias gp="git push"
 alias gl="git log --graph --oneline --decorate"
 
+alias yt="yt-dlp --remux-video mp4"
+alias ytm="yt-dlp --extract-audio --audio-format mp3 --audio-quality 0"
+
 # Plugins and themes
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
