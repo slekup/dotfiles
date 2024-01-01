@@ -50,12 +50,25 @@ fc-cache -f -v || {
 echo -e "${DONE}Registered fonts successfully"
 
 # Setup rust
-echo -e "${INFO}setting up rust"
+echo -e "${INFO}Setting up Rust"
 rustup default stable || {
-	echo -e "${FAIL}Failed to setup rust"
+	echo -e "${FAIL}Failed to setup Rust"
 	exit 1
 }
 echo -e "${DONE}Setup rust successfully"
+
+# Install MultiMC
+echo -e "${INFO}Installing MultiMC"
+function install_multimc() {
+	git clone https://github.com/MultiMC/multimc-pkgbuild.git
+	cd multimc-pkgbuild
+	makepkg -si
+	cd ..
+}
+install_multimc || {
+	echo -e "${FAIL}Failed to install MultiMC"
+	exit 1
+}
 
 echo -e "${INFO}Installing paru - AUR helper"
 function install_paru() {

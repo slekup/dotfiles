@@ -83,6 +83,11 @@ mlocate # locate CLI
 imagemagick # Convert images
 timeshift # System backups
 trash-cli # Trash files instead of perm delete
+putty # SSH manager
+ollama # Manage LLMs
+powertop # Power management
+speedtest-cli # Test internet connection speed
+wev # Debug wayland events
 
 # Apps
 firefox-developer-edition # Main browser
@@ -94,3 +99,14 @@ leafpad # Basic note taking
 obs-studio # Screen recording
 gpick # Color picker
 vlc # Video player
+gimp # Photo editor
+inkscape # Vector graphics edior
+libreoffice-fresh # Office suite
+
+# Cyber Security
+aircrack-ng # Wifi monitoring
+
+# Gaming
+jre17-openjdk # For minecraft
+protonup-qt-bin # Steam compatability
+steam # Game library
