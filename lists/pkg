@@ -91,7 +91,6 @@ wev # Debug wayland events
 
 # Apps
 firefox-developer-edition # Main browser
-chromium # Secondary browser
 tor # Privacy browser
 obsidian # Advanced Note taking
 cmus # Music player
