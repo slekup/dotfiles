@@ -1,3 +1,5 @@
+ln -s ~/dotfiles/.config/hypr/laptop.conf ~/.config/hypr/hyprland.conf
+
 ### Install software for Asus ROG laptops ###
 echo -e "Adding Keys... \n"
 sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35

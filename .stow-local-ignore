@@ -5,5 +5,8 @@ LICENSE
 setup.sh
 laptop.sh
 desktop.sh
+.config/hypr/desktop.conf
+.config/hypr/laptop.conf
+.config/hypr/main.conf
 README.md
 sddm.conf
