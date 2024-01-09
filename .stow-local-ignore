@@ -3,5 +3,7 @@ lists
 paru
 LICENSE
 setup.sh
+laptop.sh
+desktop.sh
 README.md
 sddm.conf
