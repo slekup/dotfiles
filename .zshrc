@@ -33,6 +33,9 @@ _comp_options+=(globdots)
 bindkey -v
 export KEYTIMEOUT=1
 
+# Set default editor for calcurse
+export EDITOR='nvim'
+
 # Edit line in vim with CTRL + e
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
